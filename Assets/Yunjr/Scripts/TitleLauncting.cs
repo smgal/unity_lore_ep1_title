@@ -36,5 +36,10 @@ namespace Yunjr
 
 			m_title_scroll_bar.SetActive(true);
 		}
+
+		public void OnMenuExit()
+		{
+			Application.Quit();
+		}
 	}
 }
