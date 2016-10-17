@@ -6,15 +6,15 @@ namespace Yunjr
 {
 	public class TitleLauncting : MonoBehaviour
 	{
-		private GameObject m_title_scroll_bar = null;
+		private GameObject m_title_panel_main_menu = null;
 
 		void Start()
 		{
 			// GameObject m_text_bottom = GameObject.FindGameObjectWithTag("TextBottom");
 			// GameObject m_dialog_box = GameObject.FindGameObjectWithTag("ImageDialogBox");
 
-			m_title_scroll_bar = GameObject.FindGameObjectWithTag("TitleScrollBar");
-			m_title_scroll_bar.SetActive(false);
+			m_title_panel_main_menu = GameObject.FindGameObjectWithTag("TitlePanelMainMenu");
+			m_title_panel_main_menu.SetActive(false);
 		}
 
 		void OnFloatingTitle()
@@ -34,11 +34,12 @@ namespace Yunjr
 			Animator animator = gameObject.GetComponent<Animator>();
 			animator.Stop();
 
-			m_title_scroll_bar.SetActive(true);
+			m_title_panel_main_menu.SetActive(true);
 		}
 
 		public void OnMenuExit()
 		{
+			Debug.Log("OnMenuExit() ---->");
 			Application.Quit();
 		}
 	}

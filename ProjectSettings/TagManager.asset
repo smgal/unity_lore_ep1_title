@@ -7,7 +7,7 @@ TagManager:
   - TextBottom
   - ImageDialogBox
   - TextScroll
-  - TitleScrollBar
+  - TitlePanelMainMenu
   layers:
   - Default
   - TransparentFX
